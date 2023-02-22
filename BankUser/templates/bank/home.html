@@ -1,0 +1,39 @@
+
+{% extends 'bank/base.html' %}
+{% load cloudinary %}
+{%load static%}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Online Banking Website</title>
+        <link href="../CSS/homeCSS.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <!-- <script src="../Java Script/homeJS.js"></script> -->
+    </head>
+
+    <body>
+     
+        <div id="log_sign">
+
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </div>
+
+        {% include "bank/navbar.html" %}
+
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        
+    </body>
+
+</html>
+{% endblock %}
